@@ -1,0 +1,129 @@
+/* =========================================================
+   IDENTIDADE VISUAL — CAFÉ MATTEO
+   Baseado na logomarca oficial
+   ========================================================= */
+
+/*
+  Este arquivo define os DESIGN TOKENS do projeto.
+  Ele não deve conter regras de estilo (body, h1, etc),
+  apenas valores reutilizáveis e semânticos.
+*/
+
+/* =========================================================
+   1. DESIGN TOKENS
+   ========================================================= */
+
+:root {
+  /* =====================================================
+     CORES DA MARCA
+     ===================================================== */
+
+  /* -----------------------------------------------------
+     Cor Primária
+     -----------------------------------------------------
+     Representa a marca.
+     Uso:
+     - Navbar
+     - Footer
+     - Botões principais
+     - Destaques institucionais
+  */
+  --color-primary: #4b332b; /* marrom café profundo */
+
+  /* -----------------------------------------------------
+     Cor Secundária
+     -----------------------------------------------------
+     Complementa a primária sem competir.
+     Uso:
+     - Fundos alternativos
+     - Seções destacadas
+     - Cards institucionais
+  */
+  --color-secondary: #6a4a3c; /* marrom médio quente */
+
+  /* -----------------------------------------------------
+     Cor de Acento
+     -----------------------------------------------------
+     Deve chamar atenção pontual.
+     Uso:
+     - Links
+     - Call-to-actions
+     - Ícones ativos
+     - Detalhes decorativos
+     Evitar uso excessivo.
+  */
+  --color-accent: #d2a46f; /* dourado/caramelo da logomarca */
+
+  /* =====================================================
+     PALETA NEUTRA
+     ===================================================== */
+
+  /* Fundos */
+  --color-background: #ffffff; /* fundo principal */
+  --color-surface: #f6f2ee;    /* cards, seções */
+
+  /* Texto */
+  --color-text-primary: #2b1f1a;   /* texto principal */
+  --color-text-secondary: #6d5a52; /* texto auxiliar */
+  --color-text-inverse: #ffffff;   /* texto sobre fundo escuro */
+
+  /* Bordas e divisores */
+  --color-border: #e0d6cf;
+
+  /* =====================================================
+     FEEDBACK (uso eventual)
+     ===================================================== */
+
+  --color-success: #4f7c59;
+  --color-warning: #c28b3c;
+  --color-error: #b84a3a;
+
+  /* =====================================================
+     TIPOGRAFIA
+     ===================================================== */
+
+  /*
+    Diretriz:
+    - A marca remete a tradição e elegância.
+    - Serif para títulos, sans-serif para leitura longa.
+  */
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --font-size-base: 16px;
+  --line-height-base: 1.6;
+
+  /* =====================================================
+     ESPAÇAMENTO E RITMO VISUAL
+     ===================================================== */
+
+  /*
+    Escala baseada em múltiplos de 4px.
+    Garante consistência entre layouts.
+  */
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+}
+
+/* =========================================================
+   REGRAS DE USO (RESUMO)
+   ========================================================= */
+
+/*
+  ✔ Tokens são a única fonte de verdade visual.
+  ✔ Nunca use valores hardcoded quando existir um token.
+  ✔ Não estilize elementos neste arquivo.
+  ✔ Use cores da marca com intenção semântica.
+  ✔ Prefira neutros para grandes áreas e leitura.
+  ✖ Não use a cor de acento como fundo principal.
+  ✖ Não redefina tokens fora deste arquivo.
+*/
