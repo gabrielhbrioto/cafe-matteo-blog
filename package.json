@@ -1,0 +1,16 @@
+{
+  "name": "cafe-matteo-blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "Gabriel Henrique Brioto",
+    "build:articles": "node utils/build-articles.js",
+    "build": "npm run build:articles && astro build",
+    "preview": "astro preview",
+    "create:article": "node utils/create-article.js"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
