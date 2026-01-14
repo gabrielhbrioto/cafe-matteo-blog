@@ -12,6 +12,16 @@ function initNavbarScroll() {
   const navbar = document.querySelector('.navbar');
   if (!navbar) return;
 
+  const isHome = document.body.classList.contains('page--home');
+
+  // Se NÃO for home, navbar sempre sólida
+  if (!isHome) {
+    navbar.classList.add('navbar--scrolled');
+    navbar.classList.remove('navbar--transparent');
+    return;
+  }
+
+  // Comportamento especial apenas na home
   const handleScroll = () => {
     if (window.scrollY === 0) {
       navbar.classList.add('navbar--transparent');

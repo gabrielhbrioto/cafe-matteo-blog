@@ -127,9 +127,8 @@ button {
    ========================================================= */
 
 main {
-  /* max-width: 1200px; */
   margin: 0 auto;
-  /* padding: var(--space-lg) var(--space-md);  */
+  padding: var(--space-lg) var(--space-xl);
 }
 
 section {

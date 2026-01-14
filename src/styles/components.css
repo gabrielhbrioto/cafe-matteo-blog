@@ -42,7 +42,11 @@
 .navbar__links {
   list-style: none;
   display: flex;
+  align-items: center;   
   gap: var(--space-lg);
+
+  margin: 0;
+  padding: 0;
 }
 
 .navbar__links a {
