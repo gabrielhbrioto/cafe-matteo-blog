@@ -1,0 +1,36 @@
+/* =========================================================
+   PÁGINA: HOME
+   ========================================================= */
+
+.hero {
+  min-height: 100vh;
+  background-image: url('../../../public/images/hero/cafe-matteo-capa.png');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.hero__content {
+    background-color: var(--color-background);
+    padding: var(--space-lg);
+    margin-left: var(--space-lg);
+    text-align: center;
+}
+
+.hero__image-container {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+}
+
+.hero__logo {
+  display: block;
+  max-width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+}
