@@ -1,11 +1,19 @@
 /* =========================================================
-   PÁGINA: SOBRE
+   PÁGINA: CONTATO
    ========================================================= */
 
-.page--sobre {
+.page--contato {
   min-height: 58vh;
   margin-top: 20vh;
+
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+
   background-color: var(--color-background);
-  margin-left: 20vw;
-  margin-right: 20vw;
+}
+
+.page--contato__container {
+  width: fit-content;       
+  max-width: 100%;
 }
