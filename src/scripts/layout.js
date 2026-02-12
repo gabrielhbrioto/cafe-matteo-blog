@@ -36,7 +36,44 @@ function initNavbarScroll() {
   window.addEventListener('scroll', handleScroll);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("reveal--visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
   loadLayout('#navbar', '../layouts/navbar.html', initNavbarScroll);
   loadLayout('#footer', '../layouts/footer.html');
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const badges = document.querySelectorAll(".variety-badge");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target); // anima só uma vez
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  badges.forEach(badge => observer.observe(badge));
+
 });
