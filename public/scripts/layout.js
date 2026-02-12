@@ -1,3 +1,4 @@
+
 async function loadLayout(selector, url, callback) {
   const container = document.querySelector(selector);
   if (!container) return;
@@ -55,8 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadLayout('#navbar', '/navbar.html', initNavbarScroll);
-  loadLayout('#footer', '/footer.html');
+  loadLayout('#navbar', 'navbar.html', initNavbarScroll);
+  loadLayout('#footer', 'footer.html');
 });
 
 document.addEventListener("DOMContentLoaded", () => {
