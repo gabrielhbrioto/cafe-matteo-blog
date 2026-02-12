@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "Gabriel Henrique Brioto",
+    "dev": "astro dev",
     "build:articles": "node utils/build-articles.js",
     "build": "npm run build:articles && astro build",
     "preview": "astro preview",

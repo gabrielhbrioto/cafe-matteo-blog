@@ -9,7 +9,7 @@
   margin-right: calc(-1 * var(--space-xl));
   margin-top: calc(-1 * var(--space-lg));
 
-  background-image: url('../../../public/images/hero/cafe-matteo-capa.png');
+  background-image: url('/images/hero/cafe-matteo-capa.png');
   background-size: 120%; 
   background-position: center right;
   background-repeat: no-repeat;
@@ -207,11 +207,11 @@
 }
 
 .varieties__item:nth-child(1) .varieties__item__content {
-  background-image: url('../../../public/images/content/mundo-novo.png');
+  background-image: url('/images/content/mundo-novo.png');
 }
 
 .varieties__item:nth-child(2) .varieties__item__content {
-  background-image: url('../../../public/images/content/arara.png');
+  background-image: url('/images/content/arara.png');
 }
 
 /* Mundo Novo (primeiro item) */

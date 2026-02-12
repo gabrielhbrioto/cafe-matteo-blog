@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadLayout('#navbar', '../layouts/navbar.html', initNavbarScroll);
-  loadLayout('#footer', '../layouts/footer.html');
+  loadLayout('#navbar', '/navbar.html', initNavbarScroll);
+  loadLayout('#footer', '/footer.html');
 });
 
 document.addEventListener("DOMContentLoaded", () => {
