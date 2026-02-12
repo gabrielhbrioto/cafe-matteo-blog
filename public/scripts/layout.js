@@ -55,8 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadLayout('#navbar', 'navbar.html', initNavbarScroll);
-  loadLayout('#footer', 'footer.html');
+  loadLayout('#navbar', '/cafe-matteo-blog/navbar.html', initNavbarScroll);
+  loadLayout('#footer', '/cafe-matteo-blog/footer.html');
 });
 
 document.addEventListener("DOMContentLoaded", () => {
