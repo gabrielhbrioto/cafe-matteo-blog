@@ -1,4 +1,3 @@
-
 async function loadLayout(selector, url, callback) {
   const container = document.querySelector(selector);
   if (!container) return;
