@@ -20,7 +20,7 @@ articles.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 const itemsHtml = articles.map(article => {
   return `
 <li class="artigos-item">
-  <a href="/cafe-matteo-blog/artigos/${article.slug}.html">
+  <a href="/cafe-matteo-blog/artigos/${article.slug}">
     <h2>${article.title}</h2>
     <p>${article.excerpt}</p>
     <span>${article.publishedAt}</span>
