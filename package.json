@@ -4,13 +4,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build:articles": "node utils/build-articles.js",
+    "dev": "node utils/watch-content.js & astro dev",
+    "build:articles": "node utils/build-articles.js && node utils/build-articles-index.js",
     "build": "npm run build:articles && astro build",
     "preview": "astro preview",
     "create:article": "node utils/create-article.js"
   },
   "dependencies": {
+    "chokidar": "^5.0.0",
     "http-server": "^14.1.1"
   },
   "devDependencies": {

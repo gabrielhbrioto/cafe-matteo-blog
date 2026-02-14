@@ -2,7 +2,11 @@ import fs from "fs";
 import path from "path";
 
 const ARTICLES_DIR = "content/articles";
-const OUTPUT_DIR = "dist/artigos";
+const OUTPUT_DIR =
+  process.env.NODE_ENV === "production"
+    ? "dist/artigos"
+    : "src/pages/artigos";
+
 
 if (!fs.existsSync("dist")) fs.mkdirSync("dist");
 if (!fs.existsSync(OUTPUT_DIR)) fs.mkdirSync(OUTPUT_DIR, { recursive: true });
