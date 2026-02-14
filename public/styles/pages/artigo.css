@@ -1,0 +1,15 @@
+.artigo {
+  min-height: 58vh;
+  margin-top: 20vh;
+
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+
+  background-color: var(--color-background);
+}
+
+.content {
+  width: fit-content;       
+  max-width: 100%;
+}

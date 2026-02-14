@@ -1,0 +1,87 @@
+{
+  "id": "o-que-e-drip-coffe",
+  "slug": "o-que-e-drip-coffe",
+  "title": "O que é Drip Coffe",
+  "author": "Gemini",
+  "excerpt": "O drip coffee (ou café de bolso) tornou-se uma das tendências mais práticas para quem não abre mão de um café filtrado de qualidade, mesmo na correria do dia a dia. Se você busca o equilíbrio entre a conveniência do café solúvel e o sabor de um café passado na hora, este método é a solução ideal.",
+  "coverImage": "drip-coffe.png",
+  "publishedAt": "2026-02-14",
+  "tags": [
+    "drip coffe",
+    "produto",
+    "café"
+  ],
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "O termo vem do inglês drip (gotejar). Diferente das cápsulas de espresso, o drip coffee consiste em um sachê individual que já vem com hastes flexíveis (suportes) nas laterais. Essas hastes se encaixam diretamente nas bordas de uma xícara ou caneca, transformando o sachê em um mini coador descartável."
+    },
+    {
+      "type": "paragraph",
+      "text": "Cada envelope contém uma dose precisa de café torrado e moído, geralmente em torno de 10g, protegida por uma atmosfera de nitrogênio que preserva o frescor e o aroma por muito mais tempo."
+    },
+    {
+      "type": "subtitle",
+      "text": "Como Funciona o Preparo?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A simplicidade é o maior atrativo deste método. O processo leva menos de dois minutos:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "*Abra o sachê:* Rasgue a parte superior do filtro de papel seguindo a linha pontilhada.",
+        "*Encaixe:* Abra as hastes laterais e prenda-as firmemente na borda da sua xícara.",
+        "*Despeje a água:* Adicione água quente (entre 92°C e 96°C) lentamente. O ideal é molhar o pó primeiro para a pré-infusão e depois completar o volume (cerca de 100ml a 150ml, dependendo da intensidade desejada).",
+        "*Descarte:* Remova o filtro e saboreie."
+      ]
+    },
+    {
+      "type": "subtitle",
+      "text": "As Vantagens do Café de Bolso"
+    },
+    {
+      "type": "paragraph",
+      "text": "*Portabilidade Extrema*"
+    },
+    {
+      "type": "paragraph",
+      "text": "O drip coffee foi desenhado para quem viaja, acampa ou trabalha em escritórios onde a única opção disponível é o café de garrafa térmica. Ele cabe no bolso ou na mochila e exige apenas água quente."
+    },
+    {
+      "type": "paragraph",
+      "text": "*Qualidade de \"Specialty Coffee\"*"
+    },
+    {
+      "type": "paragraph",
+      "text": "Diferente do café solúvel, que passa por processos industriais de desidratação, o drip coffee utiliza grãos moídos. Isso permite que marcas de cafés especiais ofereçam suas seleções de origem única (Single Origin) e notas sensoriais complexas neste formato prático."
+    },
+    {
+      "type": "paragraph",
+      "text": "*Sem Sujeira*"
+    },
+    {
+      "type": "paragraph",
+      "text": "Não há necessidade de lavar filtros de pano, suportes de plástico ou cafeteiras italianas. O descarte é imediato e limpo."
+    },
+    {
+      "type": "subtitle",
+      "text": "Dicas para a Experiência Perfeita"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "*Não use água fervendo:* Se a água estiver borbulhando, ela pode queimar o pó e trazer um amargor excessivo. Espere um minuto após desligar o fogo.",
+        "*Xícara Alta:* Use uma xícara alta o suficiente para que a base do filtro não fique submersa no café já extraído, o que evita uma super extração.",
+        "*Aprecie o Aroma:* No momento em que a água toca o pó, o aroma liberado é muito próximo ao de um café moído na hora. Aproveite esse \"momento ritual\"."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "O drip coffee é, em essência, a democratização do café especial: ele prova que você não precisa de equipamentos caros para apreciar uma bebida com corpo, acidez e doçura equilibrados."
+    }
+  ]
+}
