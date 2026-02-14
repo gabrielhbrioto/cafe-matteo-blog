@@ -29,6 +29,7 @@
      - Destaques institucionais
   */
   --color-primary: #4b332b; /* marrom café profundo */
+  --color-primary-rgb: 75, 51, 43;
 
   /* -----------------------------------------------------
      Cor Secundária
@@ -40,6 +41,7 @@
      - Cards institucionais
   */
   --color-secondary: #6a4a3c; /* marrom médio quente */
+  --color-secondary-rgb: 106, 74, 60;
 
   /* -----------------------------------------------------
      Cor de Acento
@@ -53,6 +55,7 @@
      Evitar uso excessivo.
   */
   --color-accent: #d2a46f; /* dourado/caramelo da logomarca */
+  --color-accent-rgb: 210, 164, 111;
 
   /* =====================================================
      PALETA NEUTRA
@@ -60,43 +63,75 @@
 
   /* Fundos */
   --color-background: #ffffff; /* fundo principal */
+  --color-background-rgb: 255, 255, 255;
   --color-surface: #f6f2ee;    /* cards, seções */
+  --color-surface-rgb: 246, 242, 238;
 
   /* Texto */
   --color-text-primary: #2b1f1a;   /* texto principal */
+  --color-text-primary-rgb: 43, 31, 26;
   --color-text-secondary: #6d5a52; /* texto auxiliar */
+  --color-text-secondary-rgb: 109, 90, 82;
   --color-text-inverse: #ffffff;   /* texto sobre fundo escuro */
+  --color-text-inverse-rgb: 255, 255, 255;
 
   /* Bordas e divisores */
   --color-border: #e0d6cf;
+  --color-border-rgb: 224, 214, 207;
 
   /* =====================================================
      FEEDBACK (uso eventual)
      ===================================================== */
 
   --color-success: #4f7c59;
+  --color-success-rgb: 79, 124, 89;
   --color-warning: #c28b3c;
+  --color-warning-rgb: 194, 139, 60;
   --color-error: #b84a3a;
+  --color-error-rgb: 184, 74, 58;
 
-  /* =====================================================
-     TIPOGRAFIA
-     ===================================================== */
+   /* =====================================================
+      TIPOGRAFIA — CAFÉ MATTEO
+      ===================================================== */
 
-  /*
-    Diretriz:
-    - A marca remete a tradição e elegância.
-    - Serif para títulos, sans-serif para leitura longa.
-  */
+   --font-logo: 'Allura', cursive;
 
-  --font-heading: 'Playfair Display', serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+   /* Títulos principais */
+   --font-heading-primary: 'Libre Baskerville', serif;
 
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
+   /* Subtítulos e apoio */
+   --font-heading-secondary: 'Montserrat', system-ui, -apple-system, sans-serif;
 
-  --font-size-base: 16px;
-  --line-height-base: 1.6;
+   /* Texto corrido */
+   --font-body: 'Montserrat', system-ui, -apple-system, sans-serif;
+
+   /* Pesos */
+
+   --font-weight-regular: 400;
+   --font-weight-medium: 500;
+   --font-weight-semibold: 600;
+   --font-weight-bold: 700;
+
+   /* Base reduzida (escala inteira diminui) */
+
+   --font-size-base: 16px;
+   --line-height-base: 1.6;
+
+   /* Escala tipográfica */
+
+   --text-xs: 0.75rem;   /* 10.5px */
+   --text-sm: 0.875rem;  /* 12.25px */
+   --text-md: 1rem;      /* 14px body */
+   --text-lg: 1.25rem;   /* 17.5px */
+   --text-xl: 1.6rem;    /* 22px */
+
+   --heading-h1: 2.6rem; /* ~36px */
+   --heading-h2: 2rem;   /* ~28px */
+   --heading-h3: 1.6rem; /* ~22px */
+   --heading-h4: 1.3rem; /* ~18px */
+   --heading-h5: 1.1rem;
+   --heading-h6: 1rem;
+
 
   /* =====================================================
      ESPAÇAMENTO E RITMO VISUAL

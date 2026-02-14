@@ -6,6 +6,7 @@
   Ponto de entrada dos estilos.
   Nunca coloque estilos diretamente aqui.
 */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
 
 @import './tokens.css';
 @import './base.css';

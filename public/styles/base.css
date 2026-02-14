@@ -43,15 +43,22 @@ body {
    ========================================================= */
 
 h1,
-h2,
+h2 {
+  font-family: var(--font-heading-primary);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  line-height: var(--line-height-base);
+  margin-bottom: var(--space-sm);
+}
+
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-heading-secondary);
   font-weight: var(--font-weight-bold);
   color: var(--color-primary);
-  line-height: 1.25;
+  line-height: var(--line-height-base);
   margin-bottom: var(--space-sm);
 }
 

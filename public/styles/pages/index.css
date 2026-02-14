@@ -17,17 +17,18 @@
   background-attachment: fixed;
 
   display: flex;
-  align-items: center;
+  align-items:start;
   position: relative;
 
   animation: zoomOutHero 4s ease-out forwards;
 }
 
 .hero__content {
-    background-color: var(--color-background);
-    padding: var(--space-sm) var(--space-xl);
-    margin-left: var(--space-lg);
-    text-align: center;
+  margin-top: 72px;
+  margin-left: var(--space-xl);
+  background-color: var(--color-background);
+  padding: var(--space-sm) var(--space-xl);
+  text-align: center;
 }
 
 .hero__image-container {
@@ -61,14 +62,12 @@
 }
 
 .differentials__title h2 {
-  font-family: var(--font-heading);
-  font-size: 3rem;
+  font-family: var(--font-heading-primary);
   margin-bottom: var(--space-md);
 }
 
 .differentials__title h4 {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-family: var(--font-heading-secondary);
   margin-bottom: var(--space-md);
 }
 
@@ -106,8 +105,7 @@
 }
 
 .differentials-text-container h3 {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
+  font-family: var(--font-heading-secondary);
   margin-bottom: var(--space-md);
 }
 
@@ -141,7 +139,7 @@
   text-align: center;
   max-width: 1000px;
   margin: var(--space-xl) auto;
-  font-size: 3rem;
+  font-family: var(--font-heading-primary);
 }
 
 .varieties {
@@ -168,13 +166,12 @@
   margin-bottom: var(--space-lg);
 }
 
-.varieties__item__title h3 {
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
+.varieties__item__title h2 {
+  font-family: var(--font-heading-secondary);
 }
 
 .variety-badge {
-  background-color: rgba(75, 51, 43, 0.92); 
+  background-color: rgba(var(--color-accent-rgb), 0.85);
   color: var(--color-text-inverse);
   padding: var(--space-md) var(--space-lg);
   border-radius: 999px; 

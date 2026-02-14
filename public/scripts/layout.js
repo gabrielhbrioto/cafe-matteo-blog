@@ -15,24 +15,9 @@ function initNavbarScroll() {
   const isHome = document.body.classList.contains('page--home');
 
   // Se NÃO for home, navbar sempre sólida
-  if (!isHome) {
-    navbar.classList.add('navbar--scrolled');
-    navbar.classList.remove('navbar--transparent');
-    return;
-  }
-
-  // Comportamento especial apenas na home
-  const handleScroll = () => {
-    if (window.scrollY === 0) {
-      navbar.classList.add('navbar--transparent');
-      navbar.classList.remove('navbar--scrolled');
-    } else {
-      navbar.classList.add('navbar--scrolled');
-      navbar.classList.remove('navbar--transparent');
-    }
-  };
-
-  handleScroll();
+  navbar.classList.add('navbar--scrolled');
+  navbar.classList.remove('navbar--transparent');
+    
   window.addEventListener('scroll', handleScroll);
 }
 
