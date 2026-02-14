@@ -121,7 +121,7 @@ async function contentLoop(article) {
     title,
     author,
     excerpt,
-    coverImage,
+    coverImage: `articles/${coverImage}`,
     publishedAt: new Date().toISOString().split("T")[0],
     tags: tagsRaw.split(",").map(t => t.trim()).filter(Boolean),
     content: []

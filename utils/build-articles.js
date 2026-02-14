@@ -66,6 +66,7 @@ function buildArticle(article) {
 <body class="page page--internal">
 
 <header id="navbar"></header>
+<img class="artigo__hero" src="/cafe-matteo-blog/images/${article.coverImage}">
 
 <main class="artigo">
   <div class="artigo__container">
@@ -73,7 +74,6 @@ function buildArticle(article) {
     <header class="artigo__header">
       <h1>${article.title}</h1>
       <p>${article.author} — ${article.publishedAt}</p>
-      <img src="/cafe-matteo-blog/images/${article.coverImage}">
     </header>
 
     <section class="content">
