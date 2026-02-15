@@ -143,41 +143,58 @@
 }
 
 .varieties {
-  display: flex;
-  height: 90vh;
-  margin-left: calc(-1 * var(--space-xl));
-  margin-right: calc(-1 * var(--space-xl));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vw;       
+  padding: 0 var(--space-lg); 
+  align-items: start; 
 }
+
 
 .varieties__item {
   flex: 1;
   display: flex;
   flex-direction: column;
+  height: min-content;
   color: var(--color-text-inverse);
   position: relative;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+
+  background: rgba(255,255,255,0.04); 
+  border-radius: 30px;
+  overflow: hidden; 
+  backdrop-filter: blur(4px); 
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: height 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .varieties__item__title {
   text-align: center;
   color: var(--color-text-inverse);
-  margin-bottom: var(--space-lg);
+  margin: var(--space-lg) 0;
 }
 
 .varieties__item__title h2 {
   font-family: var(--font-heading-secondary);
+  color: var(--color-primary);
+}
+
+.varieties__item__description {
+  font-family: var(--font-body);
+  color: var(--color-accent);
+  text-align: center;
+  margin: 0 var(--space-lg);
 }
 
 .variety-badge {
-  background-color: rgba(var(--color-accent-rgb), 0.85);
-  color: var(--color-text-inverse);
-  padding: var(--space-md) var(--space-lg);
+  color: var(--color-accent);
   border-radius: 999px; 
   width: fit-content;
   max-width: 90%;
-  margin: var(--space-md) var(--space-xl);
+  margin: var(--space-md) var(--space-sm);
   text-align: center;
 
   opacity: 0;
@@ -188,37 +205,84 @@
 
 .variety-badge.is-visible {
   opacity: 1;
-  transform: translateX(0);
 }
 
 .varieties__item__content {
-  flex: 1;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 var(--space-md); 
+  transition: max-height 0.5s ease-in-out, opacity 0.4s ease, padding 0.5s ease;
+}
+
+.varieties__item.is-open .varieties__item__content {
+  max-height: 1200px; /* Valor alto o suficiente para o texto */
+  opacity: 1;
+  padding: var(--space-md); /* Restaura o padding ao abrir */
+}
+
+.varieties__item__divider{
+  color: black;
+  height: 2px;              
+  width: 75%;               
+  background-color: var(--color-accent); 
+  margin: var(--space-md) auto;
+}
+
+.varieties__toggle {
+  align-self: center;
+  background: transparent;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  padding: 0.5em 1.2em;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--font-heading-secondary);
+  margin: var(--space-lg) auto;
+}
+
+.varieties__toggle:hover {
+  background: rgba(var(--color-accent-rgb), 0.5);
+}
+
+.varieties__item__scale {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: var(--space-md);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+  align-items: center;
+  gap: var(--space-sm);
 }
 
-.varieties__item:nth-child(1) .varieties__item__content {
-  background-image: url('../../images/content/mundo-novo.png');
+.scale__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-sm);
 }
 
-.varieties__item:nth-child(2) .varieties__item__content {
-  background-image: url('../../images/content/arara.png');
+.scale__label {
+  font-family: var(--font-heading-primary);
+  font-size: 1rem;
+  color: var(--color-accent);
 }
 
-/* Mundo Novo (primeiro item) */
-.varieties__item:nth-child(1) .variety-badge {
-  transform: translateX(60px);
+.scale__dots {
+  display: flex;
+  gap: 6px;
 }
 
-/* Arará (segundo item) */
-.varieties__item:nth-child(2) .variety-badge {
-  transform: translateX(-60px);
+.scale__dots span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--color-accent);
+  opacity: 0.8;
+}
+
+.scale__dots.level-1 span:nth-child(-n+1),
+.scale__dots.level-2 span:nth-child(-n+2),
+.scale__dots.level-3 span:nth-child(-n+3),
+.scale__dots.level-4 span:nth-child(-n+4) {
+  background: var(--color-accent);
 }
 
 @media (max-width: 900px) {

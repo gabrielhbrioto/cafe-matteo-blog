@@ -16,9 +16,7 @@ function initNavbarScroll() {
 
   // Se NÃO for home, navbar sempre sólida
   navbar.classList.add('navbar--scrolled');
-  navbar.classList.remove('navbar--transparent');
     
-  window.addEventListener('scroll', handleScroll);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -61,4 +59,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   badges.forEach(badge => observer.observe(badge));
 
+});
+
+document.querySelectorAll('.varieties__toggle').forEach(button => {
+  button.addEventListener('click', () => {
+    const item = button.closest('.varieties__item');
+    
+    // Toggle da classe no item pai
+    item.classList.toggle('is-open');
+
+    const expanded = item.classList.contains('is-open');
+    button.setAttribute('aria-expanded', expanded);
+    button.textContent = expanded ? 'Ocultar' : 'Saiba mais';
+  });
 });
