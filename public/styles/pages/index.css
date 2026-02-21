@@ -68,6 +68,7 @@
 
 .differentials__title h4 {
   font-family: var(--font-heading-secondary);
+  font-weight: normal;
   margin-bottom: var(--space-md);
 }
 

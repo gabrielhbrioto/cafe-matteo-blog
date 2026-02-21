@@ -1,0 +1,97 @@
+{
+  "id": "do-grao-ao-copo-guia-definitivo-sobre-torras-de-cafe",
+  "slug": "do-grao-ao-copo-guia-definitivo-sobre-torras-de-cafe",
+  "title": "Do Grão ao Copo: Guia Definitivo sobre Torras de Café",
+  "author": "Gemini",
+  "excerpt": "Você já abriu um pacote de café e percebeu que os grãos eram quase pretos e brilhantes, enquanto outros pareciam amadeirados e opacos? Essa diferença não é apenas estética. O perfil de torra é o que define se a sua xícara terá gosto de chocolate, frutas ou um toque mais defumado.",
+  "coverImage": "articles/torras.png",
+  "publishedAt": "2026-02-21",
+  "tags": [
+    "torra",
+    "café"
+  ],
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Basicamente, a torra é o processo de aplicar calor ao café verde para desencadear reações químicas (como a famosa Reação de Maillard). Vamos entender as três categorias principais:"
+    },
+    {
+      "type": "subtitle",
+      "text": "Torra Clara"
+    },
+    {
+      "type": "paragraph",
+      "text": "A preferida dos entusiastas da \"Terceira Onda\" do café. Aqui, o grão é retirado logo após o primeiro estalo (first crack)."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "*Aparência:* Cor de canela, sem óleo na superfície.",
+        "*Sabor:* Alta acidez, corpo leve e notas muito complexas.",
+        "*O que esperar:* Você sentirá o \"terroir\", ou seja, o gosto real da fruta. Espere notas florais, cítricas e herbais.",
+        "*Curiosidade:* Ao contrário do que muitos pensam, a torra clara geralmente preserva mais cafeína e antioxidantes do que as torras escuras."
+      ]
+    },
+    {
+      "type": "subtitle",
+      "text": "Torra Média"
+    },
+    {
+      "type": "paragraph",
+      "text": "O equilíbrio perfeito e o padrão mais comum para cafés especiais de alta qualidade."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "*Aparência:* Cor de chocolate ao leite, ainda sem óleos visíveis.",
+        "*Sabor:* Equilíbrio entre acidez, doçura e corpo.",
+        "*O que esperar:* É aqui que as notas de caramelo, chocolate e nozes brilham. A acidez é presente, mas menos \"vibrante\" que na clara.",
+        "*Por que escolher:* É a torra mais versátil, funcionando bem tanto no coado quanto no espresso."
+      ]
+    },
+    {
+      "type": "subtitle",
+      "text": "Torra Escura"
+    },
+    {
+      "type": "paragraph",
+      "text": "O clássico \"café forte\". O grão passa pelo segundo estalo e os açúcares começam a carbonizar."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "*Aparência:* Cor de chocolate amargo ou quase preto, com uma superfície brilhante (óleos que saíram do grão).",
+        "*Sabor:* Baixa acidez, corpo pesado e amargor acentuado.",
+        "*O que esperar:* Notas de fumo, cinzas, chocolate amargo e um final prolongado.",
+        "*Cuidado:* Torras excessivamente escuras em cafés comerciais muitas vezes servem para esconder defeitos de grãos de baixa qualidade. No café especial, ela é feita com cuidado para trazer intensidade sem queimar o paladar."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Embora a escolha da torra seja uma questão de preferência pessoal, ela também exige uma técnica refinada do mestre torrador. Cada segundo a mais dentro do tambor de torra pode ser a diferença entre um café equilibrado e um grão arruinado. É um jogo de precisão onde o calor transforma quimicamente os açúcares e aminoácidos, revelando o potencial máximo que aquele grão específico trouxe da fazenda."
+    },
+    {
+      "type": "quote",
+      "text": "\"A torra é a ponte entre o trabalho do produtor e a xícara do consumidor; é o momento onde a ciência encontra a arte para libertar os sabores aprisionados na semente.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Dessa forma, entender o perfil de torra é o primeiro passo para se tornar um consumidor mais consciente. Ao observar a cor e a textura do grão, você deixa de apenas \"beber café\" e passa a fazer uma escolha sensorial baseada no que deseja sentir naquele momento: a energia vibrante de uma torra clara ou o conforto robusto de uma torra escura."
+    },
+    {
+      "type": "subtitle",
+      "text": "Conclusão"
+    },
+    {
+      "type": "paragraph",
+      "text": "Não existe \"melhor\" torra, existe a torra certa para o seu paladar. Se você gosta de descobrir nuances de frutas e flores, vá de clara. Se busca o conforto do chocolate e equilíbrio, a média é sua amiga. E se você não abre mão de um café intenso e encorpado, a escura é a escolha."
+    },
+    {
+      "type": "paragraph",
+      "text": "*Dica de Ouro:* Sempre verifique a data da torra na embalagem. Café fresco é, invariavelmente, melhor que café velho, não importa a cor do grão!"
+    }
+  ]
+}

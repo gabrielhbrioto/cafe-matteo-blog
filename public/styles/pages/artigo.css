@@ -14,7 +14,7 @@
 
 .artigo__hero {
   position: sticky;
-  top: 60px; /* altura aproximada da navbar */
+  top: 60px; 
 
   width: 100%;
   height: 320px;
@@ -34,7 +34,146 @@
 
   padding: 2rem 1.5rem;
 
-  margin: 0 auto;
+  margin: calc(-2 * var(--space-lg)) auto;
 
   box-shadow: 0 -10px 30px rgba(0,0,0,0.08);
+}
+
+/* ===============================
+   BASE TIPOGRÁFICA DO ARTIGO
+================================ */
+
+.article-content {
+  max-width: 72ch;
+  margin: 0 auto;
+  font-family: var(--font-body, system-ui, sans-serif);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text, #222);
+}
+
+/* Parágrafos */
+.article-content p {
+  margin: 1em 0;
+}
+
+/* Links */
+.article-content a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ===============================
+   TÍTULOS
+================================ */
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4 {
+  font-family: var(--font-heading, inherit);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 2rem 0 0.6rem;
+}
+
+.article-content h1 {
+  font-size: 2.2rem;
+}
+
+.article-content h2 {
+  font-size: 1.6rem;
+}
+
+.article-content h3 {
+  font-size: 1.3rem;
+}
+
+.article-content h4 {
+  font-size: 1.1rem;
+}
+
+/* ===============================
+   LISTAS
+================================ */
+
+.article-content ul,
+.article-content ol {
+  margin: 1em 0 1.2em 1.2em;
+  padding-left: 1.2em;
+}
+
+.article-content li {
+  margin: 0.4em 0;
+}
+
+/* ===============================
+   BLOCKQUOTE
+================================ */
+
+.article-content blockquote {
+  margin: 1.5em 0;
+  padding-left: 1em;
+  border-left: 3px solid var(--color-accent, #999);
+  color: var(--color-text-muted, #555);
+  font-style: italic;
+}
+
+/* ===============================
+   CÓDIGO INLINE E BLOCO
+================================ */
+
+.article-content code {
+  font-family: monospace;
+  background: rgba(0,0,0,0.05);
+  padding: 0.15em 0.3em;
+  border-radius: 4px;
+}
+
+.article-content pre {
+  background: rgba(0,0,0,0.06);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   IMAGENS
+================================ */
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.2em 0;
+}
+
+/* ===============================
+   TABELAS (se usar futuramente)
+================================ */
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
+}
+
+.article-content th,
+.article-content td {
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 0.6em 0.8em;
+  text-align: left;
+}
+
+/* ===============================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 768px) {
+  .article-content {
+    font-size: 1rem;
+  }
 }
