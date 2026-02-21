@@ -1,12 +1,26 @@
-async function loadLayout(selector, url, callback) {
+/* =========================================================
+   UTIL: Load HTML Components
+========================================================= */
+
+async function loadLayout(selector, url) {
   const container = document.querySelector(selector);
-  if (!container) return;
+  if (!container) {
+    return null;
+  }
 
-  const response = await fetch(url);
-  container.innerHTML = await response.text();
-
-  if (callback) callback();
+  try {
+    const response = await fetch(url);
+    const html = await response.text();
+    container.innerHTML = html;
+    return container;
+  } catch (err) {
+    return null;
+  }
 }
+
+/* =========================================================
+   NAVBAR
+========================================================= */
 
 function initNavbarScroll() {
   const navbar = document.querySelector('.navbar');
@@ -14,62 +28,126 @@ function initNavbarScroll() {
 
   const isHome = document.body.classList.contains('page--home');
 
-  // Se NÃO for home, navbar sempre sólida
-  navbar.classList.add('navbar--scrolled');
-    
+  // Se não for home, navbar sempre sólida
+  if (!isHome) {
+    navbar.classList.add('navbar--scrolled');
+    return;
+  }
+
+  // Scroll behavior na home
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('navbar--scrolled', window.scrollY > 50);
+  });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll(".reveal");
+/* =========================================================
+   REVEAL ON SCROLL
+========================================================= */
 
-  const observer = new IntersectionObserver((entries) => {
+function initReveal() {
+  const elements = document.querySelectorAll(".reveal");
+  if (!elements.length) return;
+
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("reveal--visible");
         observer.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.2
-  });
+  }, { threshold: 0.2 });
 
   elements.forEach(el => observer.observe(el));
-});
+}
 
+/* =========================================================
+   VARIETY BADGES ANIMATION
+========================================================= */
 
-document.addEventListener('DOMContentLoaded', () => {
-  loadLayout('#navbar', '/cafe-matteo-blog/navbar.html', initNavbarScroll);
-  loadLayout('#footer', '/cafe-matteo-blog/footer.html');
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-
+function initVarietyBadges() {
   const badges = document.querySelectorAll(".variety-badge");
+  if (!badges.length) return;
 
-  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target); // anima só uma vez
+        observer.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.2
-  });
+  }, { threshold: 0.2 });
 
   badges.forEach(badge => observer.observe(badge));
+}
 
-});
+/* =========================================================
+   VARIETIES TOGGLE (Saiba mais)
+========================================================= */
 
-document.querySelectorAll('.varieties__toggle').forEach(button => {
-  button.addEventListener('click', () => {
-    const item = button.closest('.varieties__item');
-    
-    // Toggle da classe no item pai
-    item.classList.toggle('is-open');
+function initVarietiesToggle() {
+  const buttons = document.querySelectorAll('.varieties__toggle');
+  if (!buttons.length) return;
 
-    const expanded = item.classList.contains('is-open');
-    button.setAttribute('aria-expanded', expanded);
-    button.textContent = expanded ? 'Ocultar' : 'Saiba mais';
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.varieties__item');
+      if (!item) return;
+
+      item.classList.toggle('is-open');
+
+      const expanded = item.classList.contains('is-open');
+      button.setAttribute('aria-expanded', expanded);
+      button.textContent = expanded ? 'Ocultar' : 'Saiba mais';
+    });
   });
+}
+
+/* =========================================================
+   WHATSAPP vs FOOTER OBSERVER
+========================================================= */
+
+function initWhatsappFooterObserver() {
+  const footer = document.querySelector('.footer');
+  const whatsapp = document.querySelector('.whatsapp-float');
+
+  if (!footer || !whatsapp) return;
+
+  function updatePosition() {
+    const footerRect = footer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Quanto o footer entrou na tela
+    const overlap = Math.max(0, windowHeight - footerRect.top);
+
+    // Margem base
+    const baseBottom = 24;
+    whatsapp.style.bottom = `${baseBottom + overlap}px`;
+  }
+
+  window.addEventListener('scroll', updatePosition);
+  window.addEventListener('resize', updatePosition);
+  updatePosition();
+}
+
+/* =========================================================
+   MAIN BOOTSTRAP
+========================================================= */
+
+document.addEventListener('DOMContentLoaded', async () => {
+
+  // Load Navbar
+  await loadLayout('#navbar', '/cafe-matteo-blog/navbar.html');
+  initNavbarScroll();
+
+  // Load WhatsApp FIRST
+  await loadLayout('#whatsapp', '/cafe-matteo-blog/whatsapp.html');
+
+  // Load Footer AFTER WhatsApp
+  await loadLayout('#footer', '/cafe-matteo-blog/footer.html');
+  initWhatsappFooterObserver();
+
+  // UI Effects
+  initReveal();
+  initVarietyBadges();
+  initVarietiesToggle();
 });
